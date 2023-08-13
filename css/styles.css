@@ -794,11 +794,14 @@ body {
 
 .form-input:hover,
 .form-textarea:hover,
-.form-icon:hover,
 .form-input:focus,
-.form-textarea:focus,
-.form-icon:focus {
+.form-textarea:focus {
   border-color: var(--iris);
+  outline: none;
+}
+
+.form-input:hover + .form-icon,
+.form-input:focus + .form-icon {
   fill: var(--iris);
 }
 
